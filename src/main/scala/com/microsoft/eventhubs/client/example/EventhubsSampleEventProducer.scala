@@ -31,7 +31,7 @@ class EventhubsSampleEventProducer(
 
       try {
 
-        val randomString: String = randomGenerator.alphanumeric.take(eventLength).mkString
+        val randomString: String = "ejs=================" + randomGenerator.alphanumeric.take(eventLength).mkString
 
         eventHubsSender.send(randomString)
 
